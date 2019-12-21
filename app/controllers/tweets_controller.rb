@@ -1,7 +1,7 @@
 class TweetsController < ApplicationController
 
   def index
-    @tweets = Tweet.all
+    @tweets = Tweet.all.order(created_at: :desc)
   end
 
   def new
@@ -10,6 +10,11 @@ class TweetsController < ApplicationController
 
   def create
     Tweet.create(tweet_params)
+  end
+
+  def destroy
+    tweet = Tweet.find(params[:id])
+    tweet.destroy
   end
 
   private
