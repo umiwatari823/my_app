@@ -5,7 +5,6 @@
 <div class="contents row">
   <% @tweets.each do |tweet| %>
     <%= render partial: "tweet", locals: { tweet: tweet } %>
-    <%= render partial: 'tweet', collection: @tweet, as: :tweet %>
   <% end %>
   <%= paginate(@tweets) %>
 </div>
