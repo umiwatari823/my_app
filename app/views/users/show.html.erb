@@ -3,6 +3,8 @@
 
   <% @tweets.each do |tweet| %>
     <%= render partial: "tweets/tweet", locals: { tweet: tweet } %>
+    <%= render 'likes/like', tweet: tweet %>
+
   <% end %>
   <%= paginate(@tweets) %>
 </div>
