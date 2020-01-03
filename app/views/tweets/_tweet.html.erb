@@ -1,4 +1,4 @@
-<% if user_signed_in? && current_user.id == tweet.user_id %>
+<% if user_signed_in?%>
 <%= render 'likes/like', tweet: tweet %>
 <% end %>
   <div class="content_post" style="background-image: url(<%= tweet.image %>);">
