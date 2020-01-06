@@ -13,13 +13,14 @@
         </ul>
       </div>
     <% end %>
-    <%= simple_format(@tweet.text) %>
     <span class="name">
       <a href="/users/<%= @tweet.user.id %>">
         <span>投稿者</span><%= @tweet.user.nickname %>
       </a>
     </span>
   </div>
+  <h3>内容</h3>
+  <%= simple_format(@tweet.text) %>
   <div class="container">
     <% if current_user %>
       <%= form_with(model: [@tweet, @comment], local: true) do |form| %>

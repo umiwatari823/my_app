@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TripTweeter</title>
+    <title>TripTweet</title>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
@@ -24,7 +24,7 @@
   <body>
     <header class="header">
       <div class="header__bar row">
-        <h1 class="grid-6"><a href="/">TripTweeter</a></h1>
+        <h1 class="grid-6"><a href="/">TripTweet</a></h1>
         <% if user_signed_in? %>
           <div class="user_nav grid-6">
             <span><%= current_user.nickname %>
@@ -45,11 +45,11 @@
         <% end %>
       </div>
     </header>
-            <%= form_with(url: tweets_searches_path, local: true, method: :get, class: "search-form") do |form| %>
-            <%= form.text_field :keyword, placeholder: "投稿を検索する", class: "search-input" %>
-            <%= form.submit "検索", class: "search-btn" %>
-            <% end %>
 
+    <%= form_with(url: tweets_searches_path, local: true, method: :get, class: "search-form") do |form| %>
+    <%= form.text_field :keyword, placeholder: "投稿を検索する", class: "search-input" %>
+    <%= form.submit "検索", class: "search-btn" %>
+    <% end %>
     <%= yield %>
 
     <footer>
