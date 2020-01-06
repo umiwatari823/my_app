@@ -1,9 +1,9 @@
 <div class="contents row">
   <p><%= @nickname %>さんの投稿一覧</p>
+  <%= render 'follow_form' %>
+  <%= render 'stats' %>
   <% @tweets.each do |tweet| %>
     <%= render partial: "tweets/tweet", locals: { tweet: tweet } %>
   <% end %>
   <%= paginate(@tweets) %>
 </div>
-<%= render 'follow_form' %>
-<%= render 'stats' %>
