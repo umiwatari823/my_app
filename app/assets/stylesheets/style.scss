@@ -21,11 +21,11 @@ body {
   padding-top: 60px;
 }
 
-h1,h2,h3,h4,h5,h6,body {
+h1,h2,h3,h4,h5,h6 {
 line-height: 1.57;
   letter-spacing: 0.15em;
   font-size: 16px;
-  color: red;
+  color: black;
   margin: 0;
 }
 
@@ -140,6 +140,7 @@ header.header {
       font-size: 1em;
       cursor: pointer;
       position: relative;
+      color: white;
       &:after {
         content: '▼';
         font-size: .7em;
