@@ -1,15 +1,22 @@
 # 使用技術
   
   ・Ruby 2.5.1
+
   ・Ruby on Rails 5.2.4.1
+
   ・HTML
+  
   ・SCSS
+  
   ・MySQL 
+  
   ・Nginx
+  
   ・AWS
     EC2
     Capistranoによるデプロイ
     S3
+  
   ・GitHub
 
 
