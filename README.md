@@ -28,8 +28,11 @@ http://18.176.13.161/
   ・Nginx
   
   ・AWS
+
     EC2
-    Capistranoによるデプロイ
+    
+    Capistranoによる自動デプロイ
+    
     S3
   
   ・GitHub
