@@ -1,24 +1,31 @@
-# README
+# 使用技術
+  
+  Ruby 2.5.1
+  Ruby on Rails 5.2.4.1
+  HTML
+  SCSS
+  MySQL 
+  Nginx
+  AWS
+    EC2
+    Capistranoによるデプロイ
+    S3
+  GitHub
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
 
-* Ruby version
 
-* System dependencies
 
-* Configuration
+#機能一覧
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  ユーザー登録機能
+  ログイン  ログアウトきのう
+  投稿機能
+  画像投稿機能
+  投稿編集機能
+  投稿消去機能
+  コメント機能
+  検索機能
+  ページネーション機能
+  フォロー機能
+  いいね機能（Ajax）
