@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TripTweet</title>
+    <title>Travel companion</title>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
@@ -10,7 +10,7 @@
   <body>
     <header class="header">
       <div class="header__bar row">
-        <h1 class="grid-6"><a href="/">TripTweet</a></h1>
+        <h1 class="grid-6"><a href="/">Travel companion</a></h1>
         <% if user_signed_in? %>
           <div class="user_nav grid-6">
             <span><%= current_user.nickname %>
@@ -40,7 +40,7 @@
 
     <footer>
       <p>
-      My_Portfolio  TripTweeter 2020.
+      My_Portfolio  Travel companion 2020.
       </p>
     </footer>
   </body>
