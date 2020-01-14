@@ -203,12 +203,11 @@ div.contents.row {
   div.content_post {
     
     position: relative;
-    height: 800px;
+    width: 800px;
+    height: 400px;
     color: #fff;
-    background-size: cover;
-    background-position: center center;
-    border-radius: 3px;
-    box-shadow: 0 0 10px rgba($black,0.2);
+    
+  
     &:after {
       content: '';
       position: absolute;

@@ -2,7 +2,8 @@
 <% if user_signed_in?%>
 <%= render 'likes/like', tweet: tweet %>
 <% end %>
-  <div class="content_post" style="background-image: url(<%= tweet.image %>);">
+  <div class="content_post" style="background-image: url(<%= tweet.image %>); ">
+  
     <div class="more">
       <span><%= image_tag 'arrow_top.png' %></span>
       <ul class="more_list">
