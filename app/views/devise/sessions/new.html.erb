@@ -4,11 +4,13 @@
 
     <%= form_with model: @user, url: user_session_path, id: 'new_user', class: 'new_user', local: true do |f| %>
       <div class="field">
+        <h3>テストユーザー aaa@aaa.com</h3>
         <%= f.label :email %><br />
         <%= f.email_field :email, autofocus: true %>
       </div>
 
       <div class="field">
+        <h3>パスワード 1111111</h3>
         <%= f.label :password %><br />
         <%= f.password_field :password, autocomplete: "off" %>
       </div>
