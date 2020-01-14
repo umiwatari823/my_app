@@ -11,9 +11,6 @@ http://18.176.13.161/
 メールアドレス: aaa@aaa.com
 
 パスワード: 1111111
-
-
-
 # 使用技術
   
   ・Ruby 2.5.1
@@ -31,11 +28,6 @@ http://18.176.13.161/
   ・AWS
   
   ・GitHub
-
-
-
-
-
 # 機能一覧
   
   ・ユーザー登録機能、ログイン機能(devise)
@@ -70,3 +62,6 @@ http://18.176.13.161/
 
 
 ![ポートフォリオ１](https://user-images.githubusercontent.com/56866099/72323085-36a1a880-36eb-11ea-8b67-140a4f415f3d.jpg)
+
+![ポートフォリオ２](https://user-images.githubusercontent.com/56866099/72324637-bed57d00-36ee-11ea-8ed4-f812b11478d2.jpg)
+
