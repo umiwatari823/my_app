@@ -1,7 +1,7 @@
 <div class ="contents row">
 <span class="name">
   <a href="/users/<%= @tweet.user.id %>">
-    <span>投稿者</span><%= @tweet.user.nickname %><%= @tweet.address %>
+    <span>投稿者</span><%= @tweet.user.nickname %>
     <span>投稿日</span><%= @tweet.created_at.strftime("%Y/%m/%d %H:%M") %>
   </a>
 </span>
