@@ -371,3 +371,39 @@ table {
   border-spacing: 0;
   margin: auto;
 }
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.row {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 660px;
+  *zoom: 1;
+}
+
