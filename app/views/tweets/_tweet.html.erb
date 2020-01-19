@@ -2,6 +2,12 @@
 <% if user_signed_in?%>
 <%= render 'likes/like', tweet: tweet %>
 <% end %>
+<span class="name">
+  <a href="/users/<%= tweet.user.id %>">
+    <span>投稿者</span><%= tweet.user.nickname %>
+    <span>投稿日</span><%= tweet.created_at.strftime("%Y/%m/%d %H:%M") %>
+  </a>
+</span>
   <div class="content_post" style="background-image: url(<%= tweet.image %>); ">
   
     <div class="more">
@@ -20,13 +26,8 @@
         <% end %>
       </ul>
     </div>
-    <span class="name">
-      <a href="/users/<%= tweet.user.id %>">
-        <span>投稿者</span><%= tweet.user.nickname %>
-        <span>投稿日</span><%= tweet.created_at.strftime("%Y/%m/%d %H:%M") %>
-      </a>
-    </span>
   </div>
   <h3>内容</h3>
   <%= simple_format(tweet.text) %>
   <hr>
+  
